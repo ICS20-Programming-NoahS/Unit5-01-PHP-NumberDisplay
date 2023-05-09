@@ -22,7 +22,7 @@
   	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
 
     <!--Title-->
-  	<title>What movie can you watch in theaters?</title>
+  	<title>Number Display</title>
   
   </head>
   <body>
@@ -35,7 +35,7 @@
   	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   		<header class="mdl-layout__header">
   			<div class="mdl-layout__header-row">
-  				<span class="mdl-layout-title">What movie can you watch in theaters?</span>
+  				<span class="mdl-layout-title">Number Display</span>
   			</div>
   		</header>
   	</div>
@@ -44,14 +44,20 @@
       <br>
       <br>
       <img src="./images/lots_of_numbers.jpg" alt="numbers" height="230" width="300">
-
-
-      <!-- Enter a number -->
+      <h5>This program will display all numbers from the min to the max number:</h5>
+      
+      <!-- Enter your min -->
   		<form action="./results.php" method="post" target="results">
-      <label for="user-number">Enter a number:</label>
-      <input type="number" id="user-number" placeholder="Enter a number..."  name="user-number">
+      <label for="user-min">Enter your min:</label>
+      <input type="number" id="user-min" placeholder="Enter your min..."  name="user-min">
       <br>
-      <input type="submit" value="calculate">
+    
+      <!-- Enter your max -->
+  		<form action="./results.php" method="post" target="results">
+      <label for="user-max">Enter your max:</label>
+      <input type="number" id="user-max" placeholder="Enter your max..."  name="user-max">
+      <br>
+      <input type="submit" value="Display numbers">
     </form>
       <p>
         <iframe id="results" name="results">
